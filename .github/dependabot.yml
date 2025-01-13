@@ -4,14 +4,9 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-registries:
- tfc-herbalife: # Define access for a private registry, https://github.com/github/docs/pull/6808
-    type: terraform-registry
-    url: https://app.terraform.io
-    token: ${{secrets.TF_API_TOKEN_DEPENDABOT}}
 updates:
   - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/deployment/dev" # Location of package manifests
+    directory: "../" # Location of package manifests
     registries: "*" # or tfc-herbalife
     # target-branch: "feat/grouping-prs-for-multiple-version-update"
     schedule:
@@ -22,25 +17,6 @@ updates:
     groups:
       providers:
         applies-to: version-updates
-        update-types:
-          - "minor"
-          - "patch"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/deployment/qa" # Location of package manifests
-    schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "03:00"
-      timezone: "US/Pacific"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/deployment/stg" # Location of package manifests
-    registries: "*" # or tfc-herbalife
-    schedule:
-      interval: "daily"
-      time: "03:00"
-      timezone: "US/Pacific"
-    groups:
-      providers:
         update-types:
           - "minor"
           - "patch"
