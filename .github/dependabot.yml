@@ -19,6 +19,3 @@ updates:
         patterns:
           - "google"
           - "tfe"
-        update-types:
-          - "minor"
-          - "patch"
