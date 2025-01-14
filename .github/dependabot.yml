@@ -7,80 +7,36 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+    allow:
+      - dependency-type: "all"
     groups:
-      dev-providers:
+      dev-providers-patch-minor:
         patterns:
           - "*"
+        update-types:
+        - "minor"
+        - "patch"
         exclude-patterns:
           - "*module*"
-      dev-modules:
+      dev-modules-patch-minor:
         patterns:
           - "*"
+        update-types:
+        - "minor"
+        - "patch"
         exclude-patterns:
           - "*provider*"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/qa"
-    schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "14:35"
-      timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-    groups:
-      qa-providers:
+      dev-providers-major:
         patterns:
           - "*"
+        update-types:
+        - "major"
         exclude-patterns:
           - "*module*"
-      qa-modules:
+      dev-modules-major:
         patterns:
           - "*"
-        exclude-patterns:
-          - "*provider*"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/stg"
-    schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "14:40"
-      timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-    groups:
-      stg-providers:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*module*"
-      stg-modules:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*provider*"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/uat"
-    schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "14:45"
-      timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-    groups:
-      uat-providers:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*module*"
-      uat-modules:
-        patterns:
-          - "*"
+        update-types:
+        - "major"
         exclude-patterns:
           - "*provider*"
