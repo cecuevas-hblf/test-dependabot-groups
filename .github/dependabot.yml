@@ -14,9 +14,6 @@ updates:
       timezone: "America/Mexico_City"
     allow:
       - dependency-type: "all"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
     groups:
       dev-providers:
         patterns:
