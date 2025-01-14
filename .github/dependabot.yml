@@ -12,9 +12,11 @@ updates:
       day: "monday"
       time: "17:00"
       timezone: "US/Pacific"
-    ignore:
-      - dependency-name: "*modules*"
+    #ignore:
+     # - dependency-name: "*modules*"
     groups:
       providers:
         patterns:
           - "*"
+        exclude-patterns:
+          - "*module*"
