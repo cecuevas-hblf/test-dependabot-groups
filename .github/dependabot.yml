@@ -16,7 +16,7 @@ updates:
       - dependency-type: "all"
       - dependency-name: "registry.terraform.io/*"
     ignore:
-      - dependency-name: "app.terraform.io/*"
+      - dependency-name: "*::github::*"
     groups:
       providers:
         patterns:
