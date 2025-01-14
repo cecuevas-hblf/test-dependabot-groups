@@ -17,4 +17,5 @@ updates:
     groups:
       providers:
         patterns:
-          - "*"
+          - "google"
+          - "tfe"
