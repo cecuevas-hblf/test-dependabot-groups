@@ -9,9 +9,9 @@ updates:
     directory: "/dev"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "17:00"
-      timezone: "US/Pacific"
+      day: "tuesday"
+      time: "14:30"
+      timezone: "America/Mexico_City"
     groups:
       dev-providers:
         patterns:
@@ -27,9 +27,9 @@ updates:
     directory: "/qa"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "17:00"
-      timezone: "US/Pacific"
+      day: "tuesday"
+      time: "14:35"
+      timezone: "America/Mexico_City"
     groups:
       qa-providers:
         patterns:
@@ -45,9 +45,9 @@ updates:
     directory: "/stg"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "17:00"
-      timezone: "US/Pacific"
+      day: "tuesday"
+      time: "14:40"
+      timezone: "America/Mexico_City"
     groups:
       stg-providers:
         patterns:
@@ -63,9 +63,9 @@ updates:
     directory: "/uat"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "17:00"
-      timezone: "US/Pacific"
+      day: "tuesday"
+      time: "14:45"
+      timezone: "America/Mexico_City"
     groups:
       uat-providers:
         patterns:
