@@ -15,8 +15,8 @@ updates:
     allow:
       dependency-type: "all"
     ignore:
-      dependency-name: "*"
-      update-types: "version-update:semver-major"
+      - dependency-name: "*"
+        update-types: "version-update:semver-major"
     groups:
       dev-providers:
         patterns:
