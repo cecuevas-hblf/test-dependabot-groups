@@ -14,6 +14,5 @@ updates:
       timezone: "US/Pacific"
     allow:
       - dependency-type: "all"
-      - dependency-name: "registry.terraform.io:443/v1/modules/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
     ignore:
-      - dependency-name: "registry.terraform.io:443/v1/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
+      - dependency-name: "*/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
