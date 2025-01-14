@@ -20,10 +20,3 @@ updates:
           - dependency-name: "registry.terraform.io:443/v1/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
         ignore:
           - dependency-name: "registry.terraform.io:443/v1/modules/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
-      dev-modules:
-          patterns:
-            - "*"
-        allow:
-          - dependency-name: "registry.terraform.io:443/v1/modules/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
-        ignore:
-          - dependency-name: "registry.terraform.io:443/v1/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
