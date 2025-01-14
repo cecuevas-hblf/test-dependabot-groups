@@ -24,4 +24,4 @@ updates:
         patterns:
           - "*"
         exclude-patterns:
-          - "*provider*
+          - "*provider*"
