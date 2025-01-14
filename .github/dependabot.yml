@@ -16,3 +16,10 @@ updates:
       - dependency-type: "all"
     ignore:
       - dependency-name: "*/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
+    groups:
+      providers:
+        patterns:
+          - "*"
+      modules:
+        patterns:
+          - "*"
