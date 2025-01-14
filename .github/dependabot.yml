@@ -13,7 +13,7 @@ updates:
       time: "17:00"
       timezone: "US/Pacific"
     ignore:
-      - dependency-name: "*v1/modules/*"
+      - dependency-name: "terraform-google-modules/network/google"
     groups:
       providers:
         patterns:
