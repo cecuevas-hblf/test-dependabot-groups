@@ -17,7 +17,8 @@ updates:
     groups:
       providers:
         patterns:
-          - "*"
+          - "google"
+          - "tfe"
         update-types:
           - "minor"
           - "patch"
