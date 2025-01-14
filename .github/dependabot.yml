@@ -1,8 +1,3 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 updates:
   - package-ecosystem: "terraform" # See documentation for possible values
@@ -12,36 +7,81 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
     groups:
       dev-providers:
         patterns:
           - "*"
         exclude-patterns:
           - "*module*"
-        update-types:
-          - "patch"
-          - "minor"
       dev-modules:
         patterns:
           - "*"
         exclude-patterns:
           - "*provider*"
-        update-types:
-          - "patch"
-          - "minor"
-    - package-ecosystem: "terraform" # See documentation for possible values
+  - package-ecosystem: "terraform" # See documentation for possible values
     directory: "/qa"
     schedule:
       interval: "weekly"
       day: "tuesday"
-      time: "14:30"
+      time: "14:35"
       timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+    groups:
+      qa-providers:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*module*"
+      qa-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/stg"
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
+      time: "14:40"
+      timezone: "America/Mexico_City"
+    groups:
+      stg-providers:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*module*"
+      stg-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/uat"
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
+      time: "14:45"
+      timezone: "America/Mexico_City"
+    groups:
+      uat-providers:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*module*"
+      uat-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
+		  
+		  
+---------------------------------
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/qa"
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
+      time: "14:35"
+      timezone: "America/Mexico_City"
     groups:
       qa-providers:
         patterns:
@@ -64,11 +104,8 @@ updates:
     schedule:
       interval: "weekly"
       day: "tuesday"
-      time: "14:30"
+      time: "14:40"
       timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
     groups:
       stg-providers:
         patterns:
@@ -91,11 +128,8 @@ updates:
     schedule:
       interval: "weekly"
       day: "tuesday"
-      time: "14:30"
+      time: "14:45"
       timezone: "America/Mexico_City"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
     groups:
       uat-providers:
         patterns:
