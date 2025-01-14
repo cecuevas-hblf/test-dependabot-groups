@@ -6,7 +6,9 @@
 version: 2
 updates:
   - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directories:
+      - "/dev"
+      - "/qa"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -14,11 +16,12 @@ updates:
       timezone: "US/Pacific"
     versioning-strategy: "increase"
     groups:
-      providers-version:
+      providers:
         applies-to: version-updates
         patterns:
-          - "*"
+          - "tfe"
+          - "google"
+        dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
-          - "major"
