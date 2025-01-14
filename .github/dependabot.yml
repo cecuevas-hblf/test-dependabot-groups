@@ -16,16 +16,11 @@ updates:
           - "*"
         exclude-patterns:
           - "*module*"
-        update-types:
-          - "minor"
       dev-modules:
         patterns:
           - "*"
         exclude-patterns:
           - "*provider*"
-        update-types:
-          - "minor"
-          - "patch"
   - package-ecosystem: "terraform" # See documentation for possible values
     directory: "/qa"
     schedule:
@@ -42,16 +37,11 @@ updates:
           - "*"
         exclude-patterns:
           - "*module*"
-        update-types:
-          - "minor"
       qa-modules:
         patterns:
           - "*"
         exclude-patterns:
           - "*provider*"
-        update-types:
-          - "minor"
-          - "patch"
   - package-ecosystem: "terraform" # See documentation for possible values
     directory: "/stg"
     schedule:
@@ -68,16 +58,11 @@ updates:
           - "*"
         exclude-patterns:
           - "*module*"
-        update-types:
-          - "minor"
       stg-modules:
         patterns:
           - "*"
         exclude-patterns:
           - "*provider*"
-        update-types:
-          - "minor"
-          - "patch"
   - package-ecosystem: "terraform" # See documentation for possible values
     directory: "/uat"
     schedule:
@@ -94,13 +79,8 @@ updates:
           - "*"
         exclude-patterns:
           - "*module*"
-        update-types:
-          - "minor"
       uat-modules:
         patterns:
           - "*"
         exclude-patterns:
           - "*provider*"
-        update-types:
-          - "minor"
-          - "patch"
