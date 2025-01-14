@@ -12,10 +12,9 @@ updates:
       day: "monday"
       time: "17:00"
       timezone: "US/Pacific"
-    allow:
-      - dependency-type: "all"
+    ignore:
+      - dependency-name: "registry.terraform.io:443/v1/modules/*"
     groups:
       providers:
         patterns:
-          - "google"
-          - "tfe"
+          - "*"
