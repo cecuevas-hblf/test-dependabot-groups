@@ -7,8 +7,6 @@ version: 2
 updates:
   - package-ecosystem: "terraform" # See documentation for possible values
     directory: "/" # Location of package manifests
-    registries: "*" # or tfc-herbalife
-    # target-branch: "feat/grouping-prs-for-multiple-version-update"
     schedule:
       interval: "weekly"
       day: "tuesday"
