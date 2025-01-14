@@ -18,3 +18,6 @@ updates:
       providers:
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"
