@@ -13,8 +13,13 @@ updates:
       time: "03:00"
       timezone: "US/Pacific"
     groups:
-      providers:
+      providers-version:
         applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+      providers-security:
+        applies-to: security-updates
         update-types:
           - "minor"
           - "patch"
