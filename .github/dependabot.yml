@@ -12,15 +12,67 @@ updates:
       day: "monday"
       time: "17:00"
       timezone: "US/Pacific"
-    #ignore:
-     # - dependency-name: "*modules*"
     groups:
-      providers:
+      devproviders:
         patterns:
           - "*"
         exclude-patterns:
           - "*module*"
-      modules:
+      dev-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/qa"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "17:00"
+      timezone: "US/Pacific"
+    groups:
+      qa-providers:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*module*"
+      qa-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/stg"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "17:00"
+      timezone: "US/Pacific"
+    groups:
+      stg-providers:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*module*"
+      stg-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/uat"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "17:00"
+      timezone: "US/Pacific"
+    groups:
+      uat-providers:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*module*"
+     uat modules:
         patterns:
           - "*"
         exclude-patterns:
