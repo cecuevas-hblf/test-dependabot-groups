@@ -14,7 +14,9 @@ updates:
       timezone: "US/Pacific"
     allow:
       - dependency-type: "all"
-      - dependency-name: "io.terraform.registry/v1/provider/*"
+      - dependency-name: "v1/providers/*"
+    ignore:
+      - dependency-name: "v1/modules/*"
     groups:
       providers:
         patterns:
