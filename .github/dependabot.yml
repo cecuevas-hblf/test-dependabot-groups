@@ -10,21 +10,11 @@ updates:
     groups:
       dev-providers-patch-minor:
         applies-to: version-updates
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
-        exclude-patterns:
-          - "*module*"
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+        exclude-patterns: ["*module*"]
       dev-modules-patch-minor:
         applies-to: version-updates
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*provider*"
-        update-types:
-          - "minor"
-          - "patch"
-        exclude-patterns:
-        - "*provider*"
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+        exclude-patterns: ["*providers*"]
