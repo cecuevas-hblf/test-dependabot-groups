@@ -15,5 +15,7 @@ updates:
     groups:
       providers-version:
         applies-to: version-updates
+        patterns:
+          - "*"
         update-types:
           - "minor"
