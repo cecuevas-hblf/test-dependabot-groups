@@ -16,6 +16,8 @@ updates:
       - dependency-type: "all"
     groups:
       providers:
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
