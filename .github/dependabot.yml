@@ -14,13 +14,10 @@ updates:
       day: "monday"
       time: "17:35"
       timezone: "US/Pacific"
+    allow:
+      - dependency-type: "all"
     groups:
       providers:
-        applies-to: version-updates
         patterns:
           - "tfe"
           - "google"
-        dependency-type: "development"
-        update-types:
-          - "minor"
-          - "patch"
