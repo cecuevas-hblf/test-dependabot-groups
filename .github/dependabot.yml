@@ -17,6 +17,4 @@ updates:
     groups:
       providers:
         patterns:
-          - "*providers*"
-        exclude-patterns:
-          - "*modules*"
+          - "*"
