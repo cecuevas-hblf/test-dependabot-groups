@@ -12,28 +12,18 @@ updates:
       day: "monday"
       time: "17:00"
       timezone: "US/Pacific"
-    allow:
-      - dependency-type: "all"
-      - dependency-name: "registry.terraform.io:443/v1/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
-    ignore:
-      - dependency-name: "registry.terraform.io:443/v1/modules/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
     groups:
       dev-providers:
         patterns:
           - "*"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/dev"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "20:00"
-      timezone: "US/Pacific"
-    allow:
-      - dependency-type: "all"
-      - dependency-name: "registry.terraform.io:443/v1/modules/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
-    ignore:
-      - dependency-name: "registry.terraform.io:443/v1/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
-    groups:
-      dev-modules:
-        patterns:
-          - "*"
+        allow:
+          - dependency-name: "registry.terraform.io:443/v1/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
+        ignore:
+          - dependency-name: "registry.terraform.io:443/v1/modules/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
+        dev-modules:
+          patterns:
+            - "*"
+        allow:
+          - dependency-name: "registry.terraform.io:443/v1/modules/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
+        ignore:
+          - dependency-name: "registry.terraform.io:443/v1/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
