@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "tuesday"
-      time: "03:00"
+      time: "17:28"
       timezone: "US/Pacific"
     groups:
       providers-version:
