@@ -12,14 +12,9 @@ updates:
       day: "monday"
       time: "17:00"
       timezone: "US/Pacific"
-    allow:
-      - dependency-type: "all"
-    ignore:
-      - dependency-name: "*/providers/*" # Change accordingly from where the dependency will be pulled. Check the Dependabot logs for reference.
     groups:
       providers:
         patterns:
-          - "*"
-      modules:
-        patterns:
-          - "*"
+          - "*providers*"
+        exclude-patterns:
+          - "*modules*"
