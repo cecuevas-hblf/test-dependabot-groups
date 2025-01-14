@@ -12,6 +12,8 @@ updates:
       day: "monday"
       time: "17:00"
       timezone: "US/Pacific"
+    allow:
+      - dependency-type: "all"
     groups:
       providers:
         patterns:
