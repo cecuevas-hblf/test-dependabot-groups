@@ -20,3 +20,8 @@ updates:
           - "*"
         exclude-patterns:
           - "*module*"
+      modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*
