@@ -72,7 +72,7 @@ updates:
           - "*"
         exclude-patterns:
           - "*module*"
-     uat-modules:
+      uat-modules:
         patterns:
           - "*"
         exclude-patterns:
