@@ -12,6 +12,10 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
+    allow:
+      dependency-type: "all"
+    ignore:
+      update-types: ["version-update:semver-major"]
     groups:
       dev-providers:
         patterns:
