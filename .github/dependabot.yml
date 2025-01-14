@@ -7,40 +7,16 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
-    allow:
-      - dependency-type: "all"
     groups:
-      dev-providers-patch-minor:
-        applies-to: version-updates
+      dev-providers:
         patterns:
-        - "*"
-        update-types:
-        - "minor"
-        - "patch"
+          - "*"
         exclude-patterns:
-        - "*module*"
-      dev-modules-patch-minor:
-        applies-to: version-updates
+          - "*module*"
+      dev-modules:
         patterns:
-        - "*"
-        update-types:
-        - "minor"
-        - "patch"
+          - "*"
         exclude-patterns:
-        - "*provider*"
-      dev-providers-major:
-        applies-to: version-updates
-        patterns:
-        - "*"
-        update-types:
-        - "major"
-        exclude-patterns:
-        - "*module*"
-      dev-modules-major:
-        applies-to: version-updates
-        patterns:
-        - "*"
-        update-types:
-        - "major"
+          - "*provider*"
         exclude-patterns:
         - "*provider*"
