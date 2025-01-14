@@ -12,6 +12,7 @@ updates:
       day: "monday"
       time: "17:35"
       timezone: "US/Pacific"
+    version-strategy: "increase"
     groups:
       providers-version:
         applies-to: version-updates
