@@ -6,9 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "terraform" # See documentation for possible values
-    directories:
-      - "/dev"
-      - "/qa"
+    directory: "/dev"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -18,6 +16,6 @@ updates:
       - dependency-type: "all"
     groups:
       providers:
-        patterns:
-          - "tfe"
-          - "google"
+        update-types:
+          - "minor"
+          - "patch"
