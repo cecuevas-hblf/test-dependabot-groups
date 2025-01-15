@@ -8,13 +8,24 @@ updates:
       time: "14:30"
       timezone: "America/Mexico_City"
     groups:
-      dev-providers:
+      dev-providers-patch:
         patterns:
-          - "*"
+        - "@tfe*"
+        update-types:
+        - "patch"
         exclude-patterns:
-          - "*module*"
-      dev-modules:
+        - "*module*"
+      dev-providers-minor:
         patterns:
-          - "*"
+        - "@tfe*"
+        update-types:
+        - "minor"
         exclude-patterns:
-          - "*provider*"
+        - "*module*"
+      dev-providers-major:
+        patterns:
+        - "@tfe*"
+        update-types:
+        - "major"
+        exclude-patterns:
+        - "*module*"
