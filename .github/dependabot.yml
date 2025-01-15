@@ -7,8 +7,6 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
-    allow:
-      - dependency-type: "direct"
     groups:
       dev-providers-patch:
         update-types:
