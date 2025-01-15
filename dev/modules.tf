@@ -1,6 +1,6 @@
 module "network" {
   source  = "terraform-google-modules/network/google"
-  version = "9.3.0"
+  version = "9.0.0"
   # insert the 3 required variables here
 }
 
