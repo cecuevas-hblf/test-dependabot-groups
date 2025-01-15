@@ -9,5 +9,7 @@ updates:
       timezone: "America/Mexico_City"
     groups:
       dev-providers-patch:
+        exclude-patterns:
+          - "*module*"
         update-types:
         - "major"
