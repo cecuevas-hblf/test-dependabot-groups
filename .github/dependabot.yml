@@ -11,26 +11,5 @@ updates:
       - dependency-type: "direct"
     groups:
       dev-providers-patch:
-        patterns:
-        - "tfe"
-        - "google"
         update-types:
         - "patch"
-        exclude-patterns:
-        - "*module*"
-      dev-providers-minor:
-        patterns:
-        - "tfe"
-        - "google"
-        update-types:
-        - "minor"
-        exclude-patterns:
-        - "*module*"
-      dev-providers-major:
-        patterns:
-        - "tfe"
-        - "google"
-        update-types:
-        - "major"
-        exclude-patterns:
-        - "*module*"
