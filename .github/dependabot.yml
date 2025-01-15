@@ -9,11 +9,15 @@ updates:
       timezone: "America/Mexico_City"
     groups:
       dev-modules-major:
+        patterns:
+         - "*module*"
         update-types:
         - "major"
         exclude-patterns:
         - "*provider*"
       dev-modules-patch-minor:
+        patterns:
+          - "*module*"
         update-types:
         - "minor"
         - "patch"
