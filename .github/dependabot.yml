@@ -12,6 +12,6 @@ updates:
         patterns:
           - "*tfe*"
         update-types:
-          - "major"
+          - "minor"
         exclude-patterns:
           - "*module*"
