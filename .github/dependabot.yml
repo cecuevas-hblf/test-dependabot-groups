@@ -8,7 +8,8 @@ updates:
       time: "14:30"
       timezone: "America/Mexico_City"
     ignore:
-        update-types: ["version-update:semver-major"]
+       - dependency-type: "direct"
+         update-types: ["version-update:semver-major"]
     groups:
       dev-providers-patch:
         patterns:
