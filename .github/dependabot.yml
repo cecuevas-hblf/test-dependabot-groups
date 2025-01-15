@@ -11,6 +11,7 @@ updates:
       dev-providers-patch:
         patterns:
         - "tfe"
+        - "google"
         update-types:
         - "patch"
         exclude-patterns:
@@ -18,6 +19,7 @@ updates:
       dev-providers-minor:
         patterns:
         - "tfe"
+        - "google"
         update-types:
         - "minor"
         exclude-patterns:
@@ -25,6 +27,7 @@ updates:
       dev-providers-major:
         patterns:
         - "tfe"
+        - "google"
         update-types:
         - "major"
         exclude-patterns:
