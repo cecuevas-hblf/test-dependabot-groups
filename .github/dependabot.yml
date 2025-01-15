@@ -17,7 +17,7 @@ updates:
         - "*provider*"
       dev-modules-patch-minor:
         patterns:
-          - "*module*"
+        - "*module*"
         update-types:
         - "minor"
         - "patch"
