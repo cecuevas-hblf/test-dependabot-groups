@@ -13,6 +13,3 @@ updates:
         - "*"
         exclude-patterns:
         - "*provider*"
-        update-types:
-        - "minor"
-        - "patch"
