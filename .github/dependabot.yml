@@ -9,6 +9,7 @@ updates:
       timezone: "America/Mexico_City"
     groups:
       dev-providers-patch:
+        dependency-type: "development"
         patterns:
         - "tfe"
         - "google"
@@ -17,6 +18,7 @@ updates:
         exclude-patterns:
         - "*module*"
       dev-providers-minor:
+        dependency-type: "development"
         patterns:
         - "tfe"
         - "google"
@@ -25,6 +27,7 @@ updates:
         exclude-patterns:
         - "*module*"
       dev-providers-major:
+        dependency-type: "development"
         patterns:
         - "tfe"
         - "google"
