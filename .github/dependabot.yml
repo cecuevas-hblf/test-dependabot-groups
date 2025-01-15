@@ -7,9 +7,10 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
-    ignore:
+    allow:
       - dependency-name: "*"
         dependency-type: "direct"
+    ignore:
         update-types: ["version-update:semver-major"]
     groups:
       dev-providers-patch:
