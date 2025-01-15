@@ -10,13 +10,19 @@ updates:
     allow:
       - dependency-type: "all"
     groups:
-      dev-providers-patch-minor:
+      dev-modules-major:
+        patterns:
+        - "*"
+        update-types:
+        - "major"
+        exclude-patterns:
+        - "*provider*"
+      dev-providers-major:
         applies-to: version-updates
         patterns:
         - "*"
         update-types:
-        - "minor"
-        - "patch"
+        - "major"
         exclude-patterns:
         - "*module*"
       dev-modules-patch-minor:
@@ -28,19 +34,12 @@ updates:
         - "patch"
         exclude-patterns:
         - "*provider*"
-      dev-providers-major:
+      dev-providers-patch-minor:
         applies-to: version-updates
         patterns:
         - "*"
         update-types:
-        - "major"
+        - "minor"
+        - "patch"
         exclude-patterns:
         - "*module*"
-      dev-modules-major:
-        applies-to: version-updates
-        patterns:
-        - "*"
-        update-types:
-        - "major"
-        exclude-patterns:
-        - "*provider*"
