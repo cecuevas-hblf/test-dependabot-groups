@@ -21,14 +21,3 @@ updates:
         - "patch"
         exclude-patterns:
         - "*provider*"
-      dev-providers-major:
-        update-types:
-        - "major"
-        exclude-patterns:
-        - "*module*"
-      dev-providers-patch-minor:
-        update-types:
-        - "minor"
-        - "patch"
-        exclude-patterns:
-        - "*module*"
