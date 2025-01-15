@@ -15,21 +15,18 @@ updates:
         - "major"
         exclude-patterns:
         - "*provider*"
-      dev-providers-major:
-        applies-to: version-updates
-        update-types:
-        - "major"
-        exclude-patterns:
-        - "*module*"
       dev-modules-patch-minor:
-        applies-to: version-updates
         update-types:
         - "minor"
         - "patch"
         exclude-patterns:
         - "*provider*"
+      dev-providers-major:
+        update-types:
+        - "major"
+        exclude-patterns:
+        - "*module*"
       dev-providers-patch-minor:
-        applies-to: version-updates
         update-types:
         - "minor"
         - "patch"
