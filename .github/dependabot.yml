@@ -10,7 +10,7 @@ updates:
     groups:
       dev-providers-patch:
         patterns:
-          - "*provider*"
+          - "*"
         update-types:
           - "minor"
         exclude-patterns:
