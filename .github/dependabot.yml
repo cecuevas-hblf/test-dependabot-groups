@@ -10,7 +10,7 @@ updates:
     groups:
       dev-providers:
         patterns:
-          - "*provider"
+          - "*provider*"
         exclude-patterns:
           - "*module*"
       dev-modules:
