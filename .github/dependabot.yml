@@ -10,21 +10,21 @@ updates:
     groups:
       dev-providers-patch:
         patterns:
-        - "@tfe*"
+        - "tfe"
         update-types:
         - "patch"
         exclude-patterns:
         - "*module*"
       dev-providers-minor:
         patterns:
-        - "@tfe*"
+        - "tfe"
         update-types:
         - "minor"
         exclude-patterns:
         - "*module*"
       dev-providers-major:
         patterns:
-        - "@tfe*"
+        - "tfe"
         update-types:
         - "major"
         exclude-patterns:
