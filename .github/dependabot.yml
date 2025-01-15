@@ -8,8 +8,13 @@ updates:
       time: "14:30"
       timezone: "America/Mexico_City"
     groups:
-      dev-modules-patch-minor:
+      dev-providers:
         patterns:
-        - "*"
+          - "*"
         exclude-patterns:
-        - "*provider*"
+          - "*module*"
+      dev-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
