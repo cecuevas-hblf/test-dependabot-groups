@@ -15,17 +15,3 @@ updates:
           - "patch"
         exclude-patterns:
           - "*module*"
-      dev-providers-minor:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-        exclude-patterns:
-          - "*module*"
-      dev-providers-major:
-        patterns:
-          - "*"
-        update-types:
-          - "major"
-        exclude-patterns:
-          - "*module*"
