@@ -8,67 +8,24 @@ updates:
       time: "14:30"
       timezone: "America/Mexico_City"
     groups:
-      dev-providers:
+      dev-providers-patch:
         patterns:
           - "*"
+        update-types:
+          - "patch"
         exclude-patterns:
           - "*module*"
-      dev-modules:
+      dev-providers-minor:
         patterns:
           - "*"
-        exclude-patterns:
-          - "*provider*"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/qa"
-    schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "14:35"
-      timezone: "America/Mexico_City"
-    groups:
-      qa-providers:
-        patterns:
-          - "*"
+        update-types:
+          - "minor"
         exclude-patterns:
           - "*module*"
-      qa-modules:
+      dev-providers-major:
         patterns:
           - "*"
-        exclude-patterns:
-          - "*provider*"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/stg"
-    schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "14:40"
-      timezone: "America/Mexico_City"
-    groups:
-      stg-providers:
-        patterns:
-          - "*"
+        update-types:
+          - "major"
         exclude-patterns:
           - "*module*"
-      stg-modules:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*provider*"
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/uat"
-    schedule:
-      interval: "weekly"
-      day: "tuesday"
-      time: "14:45"
-      timezone: "America/Mexico_City"
-    groups:
-      uat-providers:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*module*"
-      uat-modules:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*provider*"
