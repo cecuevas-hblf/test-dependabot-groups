@@ -10,25 +10,14 @@ updates:
     allow:
       - dependency-name: "*"
         dependency-type: "all"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
     groups:
       dev-providers-patch:
         patterns:
         - "*tfe*"
         update-types:
         - "patch"
-        exclude-patterns:
-        - "*module*"
-      dev-providers-minor:
-        patterns:
-        - "*tfe*"
-        update-types:
-        - "minor"
-        exclude-patterns:
-        - "*module*"
-      dev-providers-major:
-        patterns:
-        - "*tfe*"
-        update-types:
-        - "major"
         exclude-patterns:
         - "*module*"
