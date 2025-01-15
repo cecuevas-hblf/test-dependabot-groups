@@ -7,24 +7,27 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
+    allow:
+      - dependency-name: "*"
+        dependency-type: "all"
     groups:
       dev-providers-patch:
         patterns:
-        - "*"
+        - "@tfe*"
         update-types:
         - "patch"
         exclude-patterns:
         - "*module*"
       dev-providers-minor:
         patterns:
-        - "*"
+        - "@tfe*"
         update-types:
         - "minor"
         exclude-patterns:
         - "*module*"
       dev-providers-major:
         patterns:
-        - "*"
+        - "@tfe*"
         update-types:
         - "major"
         exclude-patterns:
