@@ -7,7 +7,7 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
-    versioning-strategy: "increase"
+    versioning-strategy: increase
     groups:
       dev-providers-patch:
         patterns:
