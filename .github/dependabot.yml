@@ -11,3 +11,5 @@ updates:
       dev-providers-patch:
         update-types:
         - "patch"
+        - "minor"
+        - "major"
