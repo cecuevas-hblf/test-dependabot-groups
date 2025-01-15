@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "terraform" # See documentation for possible values
+  - package-ecosystem: "terraform"
     directory: "/dev"
     schedule:
       interval: "weekly"
@@ -13,3 +13,5 @@ updates:
           - "*"
         update-types:
           - "major"
+        exclude-patterns:
+          - "*module*"
