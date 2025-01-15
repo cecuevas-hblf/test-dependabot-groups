@@ -8,10 +8,13 @@ updates:
       time: "14:30"
       timezone: "America/Mexico_City"
     groups:
-      dev-providers-patch:
+      dev-providers:
         patterns:
           - "*"
-        update-types:
-          - "patch"
         exclude-patterns:
           - "*module*"
+      dev-modules:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
