@@ -59,4 +59,5 @@ resource "test_release_please" "release" {
     d = d
     f = f
     g = g
+    refactor = refactor
 }
