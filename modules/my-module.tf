@@ -74,4 +74,5 @@ resource "test_release_please_two" "release_types_two" {
   breaking = breaking #not working
   fix_break = fix_break
   perf_break = perf_break
+  feat_break = feat_break
 }
