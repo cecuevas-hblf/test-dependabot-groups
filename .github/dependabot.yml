@@ -10,7 +10,10 @@ updates:
     groups:
       dev-providers-patch:
         patterns:
-          - "*"
+          - "*google*"
+          - "*tfe*"
+          - "*factory*"
+          - "*network*"
         update-types:
           - "patch"
           - "minor"
