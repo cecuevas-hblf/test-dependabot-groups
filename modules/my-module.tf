@@ -58,4 +58,5 @@ resource "test_release_please" "release" {
     c = c
     d = d
     f = f
+    g = g
 }
