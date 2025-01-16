@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4.1.3
-        with:
+        with: #Action Inputs start here https://github.com/marketplace/actions/release-please-action#advanced-release-configuration
           token: ${{ secrets.RELEASE_PLEASE_REPO }}
           release-type: simple
