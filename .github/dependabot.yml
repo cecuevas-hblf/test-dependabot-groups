@@ -18,6 +18,7 @@ updates:
           - "*module*"
         update-types: 
           - "minor"
+          - "major"
       dev-modules-minor:
         patterns:
           - "*"
@@ -25,17 +26,4 @@ updates:
           - "*provider*"
         update-types: 
           - "minor"
-      dev-providers-major:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*module*"
-        update-types: 
-          - "major"
-      dev-modules-major:
-        patterns:
-          - "*"
-        exclude-patterns:
-          - "*provider*"
-        update-types: 
           - "major"
