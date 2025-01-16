@@ -54,4 +54,5 @@ resource "time_static" "environment_created_date" {}
 
 resource "test_release_please" "release" {
     a = a
+    b = b
 }
