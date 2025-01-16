@@ -9,15 +9,33 @@ updates:
       timezone: "America/Mexico_City"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+        update-types: ["version-update:semver-patch"]
     groups:
-      dev-providers:
+      dev-providers-minor:
         patterns:
           - "*"
         exclude-patterns:
           - "*module*"
-      dev-modules:
+        update-types: 
+          - "minor"
+      dev-modules-minor:
         patterns:
           - "*"
         exclude-patterns:
           - "*provider*"
+        update-types: 
+          - "minor"
+      dev-providers-major:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*module*"
+        update-types: 
+          - "major"
+      dev-modules-major:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "*provider*"
+        update-types: 
+          - "major"
