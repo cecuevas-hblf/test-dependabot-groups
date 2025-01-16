@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "terraform"
+  - package-ecosystem: "terraform" # See documentation for possible values
     directory: "/dev"
     schedule:
       interval: "weekly"
@@ -11,17 +11,13 @@ updates:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
     groups:
-      dev-providers-patch:
+      dev-providers:
         patterns:
           - "*"
-        update-types:
-          - "patch"
         exclude-patterns:
           - "*module*"
-      dev-providers-minor:
+      dev-modules:
         patterns:
           - "*"
-        update-types:
-          - "minor"
         exclude-patterns:
-          - "*module*"
+          - "*provider*"
