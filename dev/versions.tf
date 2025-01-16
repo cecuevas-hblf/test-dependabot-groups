@@ -3,10 +3,10 @@ terraform {
 
   required_providers {
     google = {
-      version = "-> 5.37.0" # next minor 5.38.0
+      version = "-> 5.37.0"
     }
     tfe = {
-      version = "~> 0.58.0" # next patch 0.58.1
+      version = "~> 0.58.0"
     }
   }
 }
