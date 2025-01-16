@@ -57,4 +57,5 @@ resource "test_release_please" "release_types" {
   perf = type_perf
   feat = type_feat
   refactor = type_refactor
+  refacto3 = type_refactor2
 }
