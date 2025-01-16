@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v4.0.0...v5.0.0) (2025-01-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* refactor major
+
+### Code Refactoring
+
+* refactor major ([8ca2483](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/8ca2483267af4e73ffed9f2b6ef3296b545e5da8))
+
 ## [4.0.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v3.0.0...v4.0.0) (2025-01-16)
 
 
