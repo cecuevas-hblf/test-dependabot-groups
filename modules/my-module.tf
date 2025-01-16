@@ -60,4 +60,5 @@ resource "test_release_please" "release_types" {
   refactor2 = type_refactor2
   refactor3 = type_refactor3
   style = type_style
+  test = type_test
 }
