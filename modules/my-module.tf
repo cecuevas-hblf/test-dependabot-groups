@@ -62,3 +62,7 @@ resource "test_release_please" "release_types" {
   style = type_style
   test = type_test
 }
+
+resource "test_release_please_two" "release_types_two" {
+  fix = fix
+}
