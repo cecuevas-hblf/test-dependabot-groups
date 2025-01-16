@@ -68,5 +68,6 @@ resource "test_release_please_two" "release_types_two" {
   perf = perf
   feat = feat
   refactor = refactor #not working
-  style = style
+  style = style #not working
+  test = test
 }
