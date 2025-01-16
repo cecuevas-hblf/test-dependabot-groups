@@ -1,5 +1,16 @@
 # Changelog
 
+## [8.0.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v7.0.0...v8.0.0) (2025-01-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* chore major
+
+### Miscellaneous Chores
+
+* chore major ([7785209](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/77852095eda6c777c49f961de87d0c5ced1a5312))
+
 ## [7.0.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v6.0.0...v7.0.0) (2025-01-16)
 
 
