@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v1.1.1...v1.1.2) (2025-01-16)
+
+
+### Performance Improvements
+
+* testing perf/patch update for release please ([d2958ff](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/d2958ff54d4271e6766c619a60412610ac9d9d74))
+
 ## [1.1.1](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v1.1.0...v1.1.1) (2025-01-16)
 
 
