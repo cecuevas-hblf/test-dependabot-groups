@@ -77,4 +77,5 @@ resource "test_release_please_two" "release_types_two" {
   feat_break = feat_break
   refactor_break = refactor_break
   refactor_again = refactor_two
+  style_break = style_break
 }
