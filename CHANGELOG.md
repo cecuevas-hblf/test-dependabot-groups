@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.1.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v8.0.0...v8.1.0) (2025-01-16)
+
+
+### Features
+
+* adding new file ([88c70b1](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/88c70b1a437e34dfb0007dd83e0e4d532adf874e))
+
 ## [8.0.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v7.0.0...v8.0.0) (2025-01-16)
 
 
