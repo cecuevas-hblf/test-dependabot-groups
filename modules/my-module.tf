@@ -55,4 +55,5 @@ resource "time_static" "environment_created_date" {}
 resource "test_release_please" "release_types" {
   fix = type_fix
   perf = type_perf
+  feat = type_feat
 }
