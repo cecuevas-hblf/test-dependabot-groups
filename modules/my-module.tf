@@ -70,5 +70,6 @@ resource "test_release_please_two" "release_types_two" {
   refactor = refactor #not working
   style = style #not working
   test = test #not working
-  chore = chore
+  chore = chore #not working
+  breaking = breaking
 }
