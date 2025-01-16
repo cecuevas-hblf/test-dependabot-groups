@@ -52,15 +52,6 @@ data "tfe_outputs" "dns_outputs" {
 
 resource "time_static" "environment_created_date" {}
 
-resource "test_release_please" "release" {
-    a = a
-    b = b
-    c = c
-    d = d
-    f = f
-    g = g
-    refactor = refactor
-    refactor2 = refactor2
-    style = style
-    major = major
+resource "test_release_please" "release_types" {
+  fix = type_fix
 }
