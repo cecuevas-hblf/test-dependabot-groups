@@ -7,13 +7,14 @@ updates:
       day: "tuesday"
       time: "14:30"
       timezone: "America/Mexico_City"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
-      dev-providers-patch:
+      dev-providers-patch-minor:
         patterns:
-          - "*google*"
-          - "*tfe*"
-          - "*factory*"
-          - "*network*"
+          - "google"
+          - "tfe"
         update-types:
           - "patch"
           - "minor"
