@@ -11,10 +11,17 @@ updates:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
     groups:
-      dev-providers-patch-minor:
+      dev-providers-minor:
         patterns:
-          - "google"
-          - "tfe"
+          - "*"
         update-types:
           - "patch"
+        exclude-patterns:
+          - "*module*"
+      dev-providers-minor:
+        patterns:
+          - "*"
+        update-types:
           - "minor"
+        exclude-patterns:
+          - "*module*"
