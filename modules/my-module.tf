@@ -67,4 +67,5 @@ resource "test_release_please_two" "release_types_two" {
   fix = fix
   perf = perf
   feat = feat
+  refactor = refactor
 }
