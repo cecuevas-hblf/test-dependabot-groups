@@ -1,5 +1,16 @@
 # Changelog
 
+## [6.0.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v5.0.0...v6.0.0) (2025-01-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* style major
+
+### Styles
+
+* style major ([a193990](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/a193990a7300a33ca663feeb1b0cf880b28e7494))
+
 ## [5.0.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v4.0.0...v5.0.0) (2025-01-16)
 
 
