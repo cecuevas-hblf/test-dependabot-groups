@@ -81,4 +81,5 @@ resource "test_release_please_two" "release_types_two" {
   chore_break = chore_break # not working
   breaking_break = braking_break #not working
   using_terraform_module = tf
+  readme_file = readme
 }
