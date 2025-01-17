@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.2.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v8.1.0...v8.2.0) (2025-01-17)
+
+
+### Features
+
+* testing terraform module release type ([288b1e0](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/288b1e098f5d120bcd86440fd7e9d063de5b38e7))
+
 ## [8.1.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v8.0.0...v8.1.0) (2025-01-16)
 
 
