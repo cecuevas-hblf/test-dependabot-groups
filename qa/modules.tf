@@ -6,7 +6,7 @@ module "network" {
 
 module "project-factory" {
   source  = "terraform-google-modules/project-factory/google"
-  version = "18.0.0"
+  version = "17.0.0"
   # insert the 2 required variables here
 }
 
