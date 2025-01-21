@@ -1,5 +1,14 @@
 # Changelog
 
+## [8.3.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v8.2.0...v8.3.0) (2025-01-21)
+
+
+### Features
+
+* add readme.md file ([1da22e2](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/1da22e277d45d4e63bf0c87d1b328d6e840208eb))
+* **modules/resource:** adding new VPC ([0d2ae47](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/0d2ae47bd15d0371247e2a13e3912e1074f0ecf3))
+* testing other folder not modules one ([d505f5c](https://github.com/cecuevas-hblf/test-dependabot-groups/commit/d505f5ccaaf548d2ca317e52d1f9f2d9ae84a0f8))
+
 ## [8.2.0](https://github.com/cecuevas-hblf/test-dependabot-groups/compare/v8.1.0...v8.2.0) (2025-01-17)
 
 
