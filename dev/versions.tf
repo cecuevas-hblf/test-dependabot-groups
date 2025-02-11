@@ -3,10 +3,10 @@ terraform {
 
   required_providers {
     google = {
-      version = "6.16.0"
+      version = "6.20.0"
     }
     tfe = {
-      version = "0.62.0"
+      version = "0.63.0"
     }
   }
 }
