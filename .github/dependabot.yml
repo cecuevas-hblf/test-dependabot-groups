@@ -9,7 +9,7 @@ updates:
       timezone: "America/Mexico_City"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-patch"]
+        update-types: ["version-update:semver-major"]
     groups:
       dev-providers-minor:
         patterns:
